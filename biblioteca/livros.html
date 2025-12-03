@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Zenith | Livros</title>
+    <link rel="stylesheet" href="css/livros.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1 class="logo"><img src="image/unnamed.webp" alt="Biblioteca Zenith"></h1>
+        <div>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="livros.html">Livros</a>
+                <a href="">Sobre</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <aside class="filters">
+                <h2><i class="fas fa-filter"></i> Filtros</h2>
+
+                <div class="filter-section">
+                    <h3>Categorias</h3>
+                    <div class="filter-options">
+                        <div class="filter-option">
+                            <input type="checkbox" id="cat-electronics" checked>
+                            <label for="cat-electronics">Romance</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="cat-computers" checked>
+                            <label for="cat-computers">Ação</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="cat-home" checked>
+                            <label for="cat-home">Terror</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="cat-books" checked>
+                            <label for="cat-books">Suspense</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="cat-sports" checked>
+                            <label for="cat-sports">Aventura</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="cat-sports" checked>
+                            <label for="cat-sports">Comédia</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="cat-sports" checked>
+                            <label for="cat-sports">Fantasia</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="cat-sports" checked>
+                            <label for="cat-sports">Policial</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="cat-sports" checked>
+                            <label for="cat-sports">Drama</label>
+                        </div>
+                        <div class="filter-option">
+                            <input type="checkbox" id="cat-sports" checked>
+                            <label for="cat-sports">Biografia</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-section">
+                    <h3>Disponibilidade</h3>
+                    <div class="filter-options">
+                        <div class="filter-option">
+                            <input type="checkbox" id="available" checked>
+                            <label for="available">Em estoque</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-actions">
+                    <button class="btn btn-apply" id="apply-filters">Aplicar Filtros</button>
+                    <button class="btn btn-reset" id="reset-filters">Limpar</button>
+                </div>
+            </aside>
+
+            <section class="books-section">
+                <h2 class="section-title">Livros: </h2>
+                <div class="books-grid">
+                    <div class="book-card" categoria="terror">
+                        <img src="https://m.media-amazon.com/images/I/91t6bd-AN7L._SY522_.jpg" alt="1984">
+                        <div class="book-info">
+                            <div class="book-title">Terra amaldiçoada</div>
+                            <div class="book-author">Douglas lobo</div>
+                        </div>
+                    </div>
+                    <div class="book-card" categoria="terror">
+                        <img src="https://m.media-amazon.com/images/I/91g9Dvtf+jL._SY425_.jpg" alt="It">
+                        <div class="book-info">
+                            <div class="book-title">It a Coisa</div>
+                            <div class="book-author"></div>
+                        </div>
+                    </div>
+                    <div class="book-card" categoria="terror">
+                        <img src="https://m.media-amazon.com/images/I/41GPc7MweZL._SY445_SX342_QL70_ML2_.jpg"
+                            alt="Sexta feira 13">
+                        <div class="book-info">
+                            <div class="book-title">Sexta feira 13</div>
+                            <div class="book-author">David Grove</div>
+                        </div>
+                    </div>
+                    <div class="book-card" categoria="terror">
+                        <img src="https://m.media-amazon.com/images/I/91z+eHc2CvL._SY425_.jpg"
+                            alt="A paciente silenciosa">
+                        <div class="book-info">
+                            <div class="book-title">Imagens Estranhas</div>
+                            <div class="book-author">Uketsu</div>
+                        </div>
+                    </div>
+                    <div class="book-card" categoria="terror">
+                        <img src="https://lirp.cdn-website.com/174487e2/dms3rep/multi/opt/exorcista-1920w.jpeg"
+                            alt="">
+                        <div class="book-info">
+                            <div class="book-title">O exorcista</div>
+                            <div class="book-author">William Peter Blatty</div>
+                        </div>
+                    </div>
+                    <div class="book-card" data-category="romance">
+                        <img src="https://www.pensarcontemporaneo.com/content/uploads/2021/04/19_a_culpa_e_das_estrelas_c.jpg.webp"
+                            alt="">
+                        <div class="book-info">
+                            <div class="book-title">A culpa é das estrelas</div>
+                            <div class="book-author"> John Green</div>
+                        </div>
+                    </div>
+                    <div class="book-card" data-categoria="romance">
+                        <img src="https://www.pensarcontemporaneo.com/content/uploads/2021/04/13_o_diario_de_suzana_para_nicolas_c.jpg.webp"
+                            alt="">
+                        <div class="book-info">
+                            <div class="book-title">O diário de Suzana para Nicolas</div>
+                            <div class="book-author">James Patterson</div>
+                        </div>
+                    </div>
+                    <div class="book-card" data-categoria="romance">
+                        <img src="https://www.pensarcontemporaneo.com/content/uploads/2021/04/11_agua_para_elefantes_c.jpg.webp"
+                            alt="">
+                        <div class="book-info">
+                            <div class="book-title">Água para elefantes</div>
+                            <div class="book-author">Sara Gruen</div>
+                        </div>
+                    </div>
+                    <div class="book-card" data-categoria="romance">
+                        <img src="https://www.pensarcontemporaneo.com/content/uploads/2021/04/20_o_visconde_que_me_amava_c.jpg.webp"
+                            alt="">
+                        <div class="book-info">
+                            <div class="book-title">O visconde que me Amava</div>
+                            <div class="book-author">Julia Quinn</div>
+                        </div>
+                    </div>
+                    <div class="book-card" data-categoria="romance">
+                        <img src="https://www.pensarcontemporaneo.com/content/uploads/2021/04/12_simplesmente_acontece_c.jpg.webp"
+                            alt="">
+                        <div class="book-info">
+                            <div class="book-title">Simplesmente Acontece</div>
+                            <div class="book-author">Cecelia Ahern</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Biblioteca Zenith. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="categoria.html"></script>
+</body>
+
+</html>
