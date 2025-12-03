@@ -60,5 +60,42 @@ input, select, textarea {
     text-align: center;
     margin-top: 10px;
     color: #007bff;
-    text-decoration: none;
 }
+
+/* ----- HEADER ----- */
+.header {
+    width: 100%;
+    background: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.header nav {
+    margin-top: 10px;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+/* ----- FOOTER ----- */
+.footer {
+    width: 100%;
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;   /* fica preso no final da página */
+    bottom: 0;
+    left: 0;
+}
+
